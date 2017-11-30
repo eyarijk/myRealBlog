@@ -8,15 +8,16 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Management</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
   <div id="app">
-    
+
     @include('_includes.nav.main')
+    @include('_includes.nav.manage')
 
     @yield('content')
 
