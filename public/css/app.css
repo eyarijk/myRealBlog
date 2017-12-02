@@ -17379,10 +17379,22 @@ button.nav-item.is-active {
 }
 
 .side-menu {
+  display: block;
   position: fixed;
   height: 100vh;
   width: 300px;
   background: white;
   overflow-y: overlay;
+}
+
+.management-area {
+  position: absolute;
+  top: 4rem;
+  left: 200px;
+  right: 0;
+}
+
+.flex-container {
+  margin: 10px 25px;
 }
 

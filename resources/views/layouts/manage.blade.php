@@ -14,7 +14,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-  <div id="app">
+  <div class="" id="app">
 
     @include('_includes.nav.main')
     @include('_includes.nav.manage')
@@ -25,5 +25,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
+
 </body>
 </html>

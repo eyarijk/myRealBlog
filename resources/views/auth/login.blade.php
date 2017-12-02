@@ -27,7 +27,7 @@
               <p class="help if-danger">{{$errors->first('password')}}</p>
             @endif
           </div>
-          <b-checkbox name="remember" class="m-t-10">Remember Me</b-checkbox>
+          <b-checkbox name="remember" class="m-t-10" {{ old('remember') ? 'checked' : '' }}>Remember Me</b-checkbox>
           <button type="submit" class="button is-primary is-outlined is-fullwidth m-t-30" name="button">Log in</button>
         </form>
       </div>
@@ -36,4 +36,11 @@
   </div>
 </div>
 
+@endsection
+@section('scripts')
+<script>
+  var app = new Vue({
+    el: '#app',
+  });
+</script>
 @endsection

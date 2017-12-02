@@ -15,7 +15,7 @@
 </head>
 <body>
   <div id="app">
-    
+
     @include('_includes.nav.main')
 
     @yield('content')
@@ -24,5 +24,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
+
 </body>
 </html>
