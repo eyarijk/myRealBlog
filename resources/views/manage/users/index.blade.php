@@ -3,16 +3,14 @@
 @section('content')
 <div class="flex-container">
   <div class="columns m-t-10">
-    <div class="column is-half is-offset-one-quarter">
+    <div class="column ">
       <h1 class="title">Manage Users</h1>
     </div>
     <div class="column">
-      <a href="{{route('users.create')}}" class="button is-primary is-pulled-right"><i class="fa fa-user m-r-10"></i>Create New User</a>
+      <a href="{{route('users.create')}}" class="button is-primary is-pulled-right"><i class="fa fa-user-plus m-r-10"></i>Create New User</a>
     </div>
   </div>
   <hr class="m-t-0">
-  <div class="columns">
-    <div class="column is-three-fifths is-offset-one-quarter">
       <div class="card">
         <div class="card-content">
           <table class="table is-narrow">
@@ -32,7 +30,7 @@
                 <th>{{$user->name}}</th>
                 <th>{{$user->email}}</th>
                 <th>{{$user->created_at->toFormattedDateString()}}</th>
-                <th> <a class="button is-outlined" href="{{route('users.edit',$user->id)}}">Edit</a> </th>
+                <td class="has-text-right"><a class="button is-outlined is-small m-r-5" href="{{route('users.show', $user->id)}}">View</a><a class="button is-outlined is-small" href="{{route('users.edit', $user->id)}}">Edit</a></td>
               </tr>
               @endforeach
             </tbody>
@@ -42,7 +40,6 @@
       </div>
       {{$users->links()}}
     </div>
-  </div>
-</div>
+
 
 @endsection

@@ -4,12 +4,11 @@
 @section('content')
 <div class="flex-container">
   <div class="columns m-t-10">
-    <div class="column is-half is-offset-one-quarter">
+    <div class="column">
       <h1 class="title">Create New User</h1>
     </div>
   </div>
-  <div class="columns m-t-10">
-    <div class="column is-half is-offset-one-quarter">
+  <div class="m-t-10">
     <form class="" action="{{route('users.store')}}" method="post">
       {{csrf_field()}}
       <div class="field">
@@ -31,7 +30,7 @@
     </form>
   </div>
 </div>
-</div>
+
 @endsection
 
 @section('scripts')

@@ -4,12 +4,11 @@
 @section('content')
 <div class="flex-container">
   <div class="columns m-t-10">
-    <div class="column is-half is-offset-one-quarter">
+    <div class="column">
       <h1 class="title">Edit User</h1>
     </div>
   </div>
-  <div class="columns m-t-10">
-    <div class="column is-half is-offset-one-quarter">
+  <div class="m-t-10">
     <form class="" action="{{route('users.update',$user->id)}}" method="post">
       {{method_field('PUT')}}
       {{csrf_field()}}
@@ -41,7 +40,6 @@
       <button type="submit" class="button is-primary">Edit User</button>
     </form>
   </div>
-</div>
 </div>
 @endsection
 

@@ -15,11 +15,18 @@
 </head>
 <body>
   <div class="" id="app">
-
     @include('_includes.nav.main')
-    @include('_includes.nav.manage')
+    <div class="columns">
+      <div class="column">
+        @include('_includes.nav.manage')
 
-    @yield('content')
+      </div>
+
+
+    <div class="column is-10">
+      @yield('content')
+    </div>
+      </div>
 
   </div>
 

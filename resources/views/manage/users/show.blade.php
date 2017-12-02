@@ -3,7 +3,7 @@
 @section('content')
 <div class="flex-container">
   <div class="columns m-t-10">
-    <div class="column is-half is-offset-one-quarter">
+    <div class="column ">
       <h1 class="title">{{$user->name}}</h1>
       <h4 class="subtitle">View User Details</h4>
     </div>
@@ -12,8 +12,7 @@
     </div>
   </div>
   <hr class="m-t-0">
-  <div class="columns m-t-10">
-    <div class="column is-half is-offset-one-quarter">
+  <div class="m-t-10">
       <div class="field">
         <label for="name" class="label">Name:</label>
         <pre>{{$user->name}}</pre>
@@ -24,5 +23,5 @@
       </div>
     </div>
   </div>
-</div>
+
 @endsection
