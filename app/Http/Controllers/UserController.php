@@ -77,7 +77,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::findOrFail($id);
+        $user = User::where('id',$id)->with('roles')->first();
         return view('manage.users.show')->withUser($user);
     }
 
