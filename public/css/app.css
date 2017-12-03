@@ -16898,6 +16898,10 @@ button.nav-item.is-active {
   height: 4.5rem;
 }
 
+.navbar-burger {
+  border: none;
+}
+
 .m-t-5 {
   margin-top: 5px;
 }
