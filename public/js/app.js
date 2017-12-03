@@ -1050,6 +1050,7 @@ $(document).ready(function () {
     $(this).toggleClass('is-active');
   });
 });
+__webpack_require__(48);
 
 /***/ }),
 /* 12 */
@@ -40310,6 +40311,37 @@ module.exports = Vue$3;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
+/***/ (function(module, exports) {
+
+var accordions = document.getElementsByClassName('has-submenu');
+
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].onclick = function () {
+    this.classList.toggle('is-active');
+    var submenu = this.nextElementSibling;
+    if (submenu.style.maxHeight) {
+      submenu.style.maxHeight = null;
+      submenu.style.marginTop = null;
+      submenu.style.marginBottom = null;
+    } else {
+      submenu.style.maxHeight = submenu.scrollHeight + "px";
+      submenu.style.marginTop = "0.75em";
+      submenu.style.marginBottom = "0.75em";
+    }
+  };
+}
 
 /***/ })
 /******/ ]);

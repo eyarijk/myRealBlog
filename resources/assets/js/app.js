@@ -15,3 +15,4 @@ $(document).ready(function() {
     $(this).toggleClass('is-active')
   })
 })
+require('./manage')
