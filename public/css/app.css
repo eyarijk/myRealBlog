@@ -16845,7 +16845,7 @@ label.panel-block:hover {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .is-muted {
@@ -17384,7 +17384,7 @@ button.nav-item.is-active {
 
 #admin-side-menu {
   position: fixed;
-  top: 3.22rem;
+  top: 3.5rem;
   left: -200px;
   bottom: 0;
   width: 200px;

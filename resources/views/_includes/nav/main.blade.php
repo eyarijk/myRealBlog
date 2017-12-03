@@ -20,7 +20,7 @@
     </div>
     <div class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item is-tab is-active">Learn</a>
+        <a class="navbar-item is-tab ">Learn</a>
         <a class="navbar-item is-tab">Discuss</a>
         <a class="navbar-item is-tab">Share</a>
       </div> <!-- end of .navbar-start -->
