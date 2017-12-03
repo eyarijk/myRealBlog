@@ -2,6 +2,7 @@ const accordions =  document.getElementsByClassName('has-submenu')
 
 for (var i = 0; i < accordions.length; i++) {
   accordions[i].onclick = function () {
+
     this.classList.toggle('is-active');
     const submenu = this.nextElementSibling;
     if(submenu.style.maxHeight){
