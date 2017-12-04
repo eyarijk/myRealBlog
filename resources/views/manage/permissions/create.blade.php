@@ -83,7 +83,7 @@
             </div>
           </div>
 
-          <button class="button is-success">Create Permission</button>
+          <button class="button is-primary"><i class="fa fa-file-text  m-r-10"></i>Create Permission</button>
         </form>
       </div>
     </div>

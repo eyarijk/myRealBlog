@@ -2,7 +2,7 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item is-paddingless brand-item " href="{{route('home')}}">
-        <span class="m-r-15">Mr Evrey</span>
+        <span class="is-tab navbar-item" >Mr Evrey</span>
       </a>
       @if (Request::segment(1) == "manage")
         <a class="navbar-item is-hidden-desktop" id="admin-slideout-button">

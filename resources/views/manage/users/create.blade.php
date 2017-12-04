@@ -26,7 +26,7 @@
           <b-checkbox name="auto_generate" class="m-t-15" v-model="auto_password">Auto Generate Password</b-checkbox>
         </p>
       </div>
-      <button type="submit" class="button is-primary">Create User</button>
+      <button type="submit" class="button is-primary"><i class="fa fa-file-text  m-r-10"></i>Create User</button>
     </form>
   </div>
 </div>

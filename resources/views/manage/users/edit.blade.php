@@ -56,7 +56,7 @@
       <div class="columns">
         <div class="column">
           <hr />
-          <button class="button is-primary is-pulled-right" style="width: 230px;">Edit User</button>
+          <button class="button is-primary is-pulled-right" style="width: 230px;"><i class="fa fa-floppy-o  m-r-10"></i> Edit User</button>
         </div>
       </div>
     </form>

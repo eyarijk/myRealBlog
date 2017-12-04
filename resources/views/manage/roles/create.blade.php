@@ -60,7 +60,7 @@
             </div>
           </article>
         </div>
-        <button class="button is-primary" name="button">Create New Role</button>
+        <button class="button is-primary" name="button"><i class="fa fa-file-text  m-r-10"></i>Create New Role</button>
       </div>
     </div>
   </form>

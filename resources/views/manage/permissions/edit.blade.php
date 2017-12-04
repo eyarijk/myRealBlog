@@ -38,7 +38,7 @@
         </p>
       </div>
 
-      <button class="button is-primary">Save Changes</button>
+      <button class="button is-primary"><i class="fa fa-floppy-o  m-r-10"></i>Save Changes</button>
     </form>
   </div>
 @endsection

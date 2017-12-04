@@ -61,7 +61,7 @@
             </div>
           </article>
         </div>
-        <button class="button is-primary" name="button">Save Changes to Role</button>
+        <button class="button is-primary" name="button"><i class="fa fa-floppy-o  m-r-10"></i>Save Changes to Role</button>
       </div>
     </div>
   </form>
