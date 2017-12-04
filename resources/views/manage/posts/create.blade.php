@@ -15,20 +15,19 @@
     <form action="{{route('posts.store')}}" method="post">
       {{ csrf_field() }}
       <div class="columns">
-        <div class="column is-three-quarters-desktop">
+        <div class="column is-three-quarters-desktop is-three-quarters-tablet">
           <b-field>
-            <b-input type="text" placeholder="Post Title" size="is-large">
+            <b-input type="text" placeholder="Post Title" size="is-large" >
             </b-input>
           </b-field>
-          <p>
-            {{url('/blog')}}
-          </p>
+
+
           <b-field class="m-t-40">
             <b-input type="textarea"
                 placeholder="Compose your masterpiece..." rows="20">
             </b-input>
           </b-field>
-        </div> <!-- end of .column.is-three-quarters -->
+        </div>
 
         <div class="column is-one-quarter-desktop is-narrow-tablet">
           <div class="card card-widget">
@@ -36,7 +35,7 @@
               <div class="selected-author">
                 <img src="https://placehold.it/50x50"/>
                 <div class="author">
-                  <h4>Alex Curtis</h4>
+                  <h4>Mr</h4>
                   <p class="subtitle">
                     (jacurtis)
                   </p>
@@ -46,11 +45,7 @@
             <div class="post-status-widget widget-area">
               <div class="status">
                 <div class="status-icon">
-                  <b-icon
-                pack="fa"
-                icon="sticky-note"
-                size="is-large">
-            </b-icon>
+                  <b-icon icon="assignment" size="is-medium"></b-icon>
                 </div>
                 <div class="status-details">
                   <h4><span class="status-emphasis">Draft</span> Saved</h4>
@@ -67,12 +62,12 @@
               </div>
             </div>
           </div>
-        </div> <!-- end of .column.is-one-quarter -->
+        </div>
       </div>
     </form>
 
 
-  </div> <!-- end of .flex-container -->
+  </div>
 
 @endsection
 
